@@ -2,6 +2,7 @@
 Quickly run a WSL/Linux command from a Windows (e.g., PowerShell or CMD) prompt.
 
 Go Support Arkane Systems - The Original Creators
+
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I1VA18)
 
 ## Introduction
@@ -60,10 +61,6 @@ BUG_REPORT_URL="https://bugs.alpinelinux.org/"
 ```
 
 Obviously, any distribution chosen by -d/--distro must have genie installed, or the command will fail.
-
-## Examples
-
-<img src="runingenie.png" alt="example screenshot" />
 
 ## Installation
 
