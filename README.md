@@ -66,7 +66,7 @@ Obviously, any distribution chosen by -d/--distro must have genie installed, or 
 
 First Install Dotnet 6.0 as it is a dependency.
 
-Then grab the latest RunInGenie.zip from the Releases page, unzip it, and put the resulting $.exe somewhere on your PATH. Easy!
+Then grab the latest RunInGenie.zip from the github actions page by clicking on the latest build then at the bottom, Download RunInGenie, unzip it, and put the resulting $.exe somewhere on your PATH. Easy!
 
 This assumes, of course, that you already have genie installed and running correctly. If not, it won't work. genie 1.32 or higher is recommended, as earlier versions of genie had issues with arguments containing spaces. If `$ ls -la 'C:\Program Files\'` produces an error complaining that _ls_ can't find _/mnt/c/Program_, you need to upgrade your genie installation.
 
