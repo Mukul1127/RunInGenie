@@ -17,8 +17,8 @@ jobs:
         dotnet-version: 6.0.x
     - name: Build
       run: dotnet publish -c Release
-    - name: Step 3 - Use the Upload Artifact GitHub Action
+    - name: Publish
       uses: actions/upload-artifact@v2
       with: 
-        name: RunInGenie.exe
+        name: RunInGenie
         path: bin/Release/net6.0/win-x64/publish/$.exe
