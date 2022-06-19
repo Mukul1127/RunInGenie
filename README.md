@@ -28,7 +28,7 @@ Note that by default pipes (|), etc., will be interpreted by PowerShell, so:
 $ ls -la 'C:\Program Files' | clip
 ```
 
-Will send the directory listing to the _Windows_ clip.exe. If you wish to pipe within WSL, you must escape it with a backtick (`), thus:
+Will send the directory listing to the _Windows_ clip.exe. If you wish to pipe within WSL, you must escape it with a backtick (`) -- Broken will fix in later release, thus:
 
 ```
 $ ls -la 'C:\Program Files' `| less
