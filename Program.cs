@@ -3,7 +3,7 @@
 // RunInGenie - Program.cs
 // 
 // Created by: Alistair J R Young (avatar) at 2021/02/24 1:21 AM.
-// Port to Dotnet 6 By Mukul Kedia (mukul1127) at 2022/6/18 4:44 PM.
+// Port to Dotnet 6 By Mukul Kedia (mukul1127) at 2022/6/22 11:25 AM.
 
 #endregion
 
@@ -80,7 +80,7 @@ namespace ArkaneSystems.RunInGenie
                 wp.StartInfo.UseShellExecute        = false;
                 wp.StartInfo.RedirectStandardOutput = true;
                 wp.StartInfo.FileName               = "wsl";
-                wp.StartInfo.Arguments              = $"wslpath -u '{path}'";
+                wp.StartInfo.Arguments              = $"wslpath '{path}'";
                 wp.Start ();
 
                 string output = wp.StandardOutput.ReadLine ()!;

@@ -1,4 +1,5 @@
 # RunInGenie
+
 Quickly run a WSL/Linux command from a Windows (e.g., PowerShell or CMD) prompt.
 
 Go Support Arkane Systems - The Original Creators
@@ -6,6 +7,7 @@ Go Support Arkane Systems - The Original Creators
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I3I1VA18)
 
 ## Introduction
+
 This is essentially a variant of [RunInBash](https://github.com/neosmart/RunInBash) designed to run Linux commands under WSL inside the bottle created by _genie_ (see https://github.com/arkane-systems/genie) if you aren't familiar with genie, which permits the use of _systemd_ and its services under WSL.
 
 RunInGenie runs the supplied command using _genie -c_, feeding back stdout and stderr, and passing the return code back to the caller, for your convenience in building hybrid Windows/Linux scripts.
@@ -31,7 +33,7 @@ $ ls -la 'C:\Program Files' | clip
 Will send the directory listing to the _Windows_ clip.exe. If you wish to pipe within WSL, you must escape it with a backtick (`), thus:
 
 ```
-$ ls -la 'C:\Program Files' `| less
+$ ls -la 'C:\Program Files' `| less -- Broken
 ```
 
 ### Shell
@@ -68,7 +70,7 @@ First Install Dotnet 6.0 as it is a dependency.
 
 Then grab the latest RunInGenie.zip from the github actions page by clicking on the latest build then at the bottom, Download RunInGenie, unzip it, and put the resulting $.exe somewhere on your PATH. Easy!
 
-This assumes, of course, that you already have genie installed and running correctly. If not, it won't work. genie 1.32 or higher is recommended, as earlier versions of genie had issues with arguments containing spaces. If `$ ls -la 'C:\Program Files\'` produces an error complaining that _ls_ can't find _/mnt/c/Program_, you need to upgrade your genie installation.
+This assumes, of course, that you already have genie installed and running correctly. If not, it won't work. genie 1.32 or higher is recommended, as earlier versions of genie had issues with arguments containing spaces. If `$ ls -la "C:\Program Files\"` produces an error complaining that _ls_ can't find _/mnt/c/Program_, you need to upgrade your genie installation.
 
 ## Configuration
 
